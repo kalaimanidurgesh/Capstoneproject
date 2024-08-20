@@ -4,4 +4,4 @@ build
 Dockerfile
 docker-compose.yml
 *.log
-npm-debug.log
+
