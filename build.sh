@@ -4,7 +4,7 @@
 docker-compose build
 
 
-docker login -u $ -p $
+docker login -u $username -p $password
 # Tag the image
 docker tag devops-build_web:latest kalaimanidurgesh/dev:latest
 
