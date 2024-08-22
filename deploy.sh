@@ -1,4 +1,9 @@
 #!/bin/bash
+# Tag the image
+docker tag devops-build_web:latest kalaimanidurgesh/dev:latest
+
+# Push to Docker Hub public repo
+docker push kalaimanidurgesh/dev:latest
 
 # Pull the latest image from Docker Hub
 docker pull kalaimanidurgesh/prod:latest
