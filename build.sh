@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Build the Docker image
-docker-compose build
+docker build -t devops-build_web .
+
+
 
 
 docker login -u $username -p $password
