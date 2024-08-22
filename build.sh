@@ -1,12 +1,11 @@
 #!/bin/bash
 
-# Build Docker image for dev environment
-docker build -t myapp:dev .
+# Build the Docker image
+docker-compose build
 
-# Push to Docker Hub dev repository
-docker tag myapp:dev kalaimanidurgesh/dev:latest
+# Tag the image
+docker tag devops-build_web:latest kalaimanidurgesh/dev:latest
+
+# Push to Docker Hub public repo
 docker push kalaimanidurgesh/dev:latest
-
-# Build Docker image for prod environment
-docker tag myapp:dev kalaimanidurgesh/prod:latest
 
